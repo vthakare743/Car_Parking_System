@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>Admin</title>
+<link rel="icon" href="../favicon.ico" type="image/x-icon"><!-- Favicon-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet" />
+<!-- Custom Css -->
+<link href="../assets/css/main.css" rel="stylesheet">
+<!-- Swift Themes. You can choose a theme from css/themes instead of get all themes -->
+<link href="../assets/css/themes/all-themes.css" rel="stylesheet" />
+
+
+    
+	<link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+
+</head>
+
+<body class="theme-cyan">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-cyan">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader --> 
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars --> 
+
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <div class="form-group m-0">
+           
+            <button class="morphsearch-submit" type="submit">Search</button>
+        </div>
+    </form>
+    <div class="morphsearch-content">
+        <div class="dummy-column">
+            <h2>People</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar1.jpg" alt=""/>
+            
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a></div>
+        <div class="dummy-column">
+            <h2>Popular</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar1.jpg" alt=""/>
+            <h3>Sara Soueidan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a> </div>
+        <div class="dummy-column">
+            <h2>Recent</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar1.jpg" alt=""/>
+            <h3>Sara Soueidan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="../assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a></div>
+    </div>
+    <!-- /morphsearch-content --> 
+    <span class="morphsearch-close"></span> </div>
+<!-- Top Bar -->
+<nav class="navbar clearHeader">
+    <div class="container-fluid">
+        <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="#">Admin Section</a> </div>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Notifications -->
+           
+            <!-- #END# Notifications --> 
+            <!-- Tasks -->
+          
+            <!-- #END# Tasks -->
+            <li><a href="../Default.aspx" class="js-right-sidebar" data-close="true">LogOut  <i class="zmdi zmdi-settings"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section> 
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar"> 
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="admin-image"> <img src="../Images/admin2.png" alt=""> </div>
+            <div class="admin-action-info"> 
+                <h4>Welcome</h4>
+                
+            </div>
+           <div class="quick-stats">
+                <h4>Mr. Admin</h4>
+                
+            </div>
+        </div>
+        <!-- #User Info --> 
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active open"><a href="AdminDefault.aspx"><i class="zmdi zmdi-home"></i><span>Admin Dashboard</span></a></li>                                               
+                
+
+                <li><a href="NewParking.aspx"><i class="zmdi zmdi-account-o"></i><span>Add Parking</span></a></li>
+                <li><a href="ViewParking.aspx"><i class="zmdi zmdi-account-o"></i><span>View Parking</span></a></li>
+                <li><a href="ViewBooking.aspx"><i class="zmdi zmdi-account-o"></i><span>View Booking</span></a></li>
+                
+            </ul>
+        </div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar --> 
+    <!-- Right Sidebar -->
+   
+    <!-- #END# Right Sidebar --> 
+</section>
+
+<section class="content home">
+   
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+
+
+
+    </asp:ContentPlaceHolder>
+
+</section>
+
+<div class="color-bg"></div>
+
+<!-- Jquery Core Js --> 
+<script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
+<script src="../assets/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js --> 
+
+<script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="../assets/js/pages/charts/sparkline.min.js"></script> 
+<script src="../assets/js/pages/charts/chartjs.min.js"></script>
+
+<script src="../assets/js/pages/index.js"></script>
+</body>
+
+<!-- Mirrored from thememakker.com/swift/hospital/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Feb 2017 17:10:13 GMT -->
+</html>

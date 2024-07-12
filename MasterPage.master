@@ -1,0 +1,246 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>Parking</title>
+<%--<link rel="icon" href="favicon.ico" type="image/x-icon"><!-- Favicon-->--%>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<link href="assets/plugins/morrisjs/morris.css" rel="stylesheet" />
+<!-- Custom Css -->
+<link href="assets/css/main.css" rel="stylesheet">
+
+<link href="assets/css/themes/all-themes.css" rel="stylesheet" />
+
+
+    
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
+
+</head>
+
+<body class="theme-cyan">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-cyan">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader --> 
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars --> 
+
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <div class="form-group m-0">
+           
+            <button class="morphsearch-submit" type="submit">Search</button>
+        </div>
+    </form>
+    <div class="morphsearch-content">
+        <div class="dummy-column">
+            <h2>People</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar1.jpg" alt=""/>
+            
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a></div>
+        <div class="dummy-column">
+            <h2>Popular</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar1.jpg" alt=""/>
+            <h3>Sara Soueidan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a> </div>
+        <div class="dummy-column">
+            <h2>Recent</h2>
+            <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar1.jpg" alt=""/>
+            <h3>Sara Soueidan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar4.jpg" alt=""/>
+            <h3>Rachel Smith</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar3.jpg" alt=""/>
+            <h3>Peter Finlan</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar6.jpg" alt=""/>
+            <h3>Patrick Cox</h3>
+            </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/random-avatar5.jpg" alt=""/>
+            <h3>Tim Holman</h3>
+            </a></div>
+    </div>
+    <!-- /morphsearch-content --> 
+    <span class="morphsearch-close"></span> </div>
+<!-- Top Bar -->
+<nav class="navbar clearHeader">
+    <div class="container-fluid">
+        <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="#">Eassy Park</a> </div>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Notifications -->
+           
+            <!-- #END# Notifications --> 
+            <!-- Tasks -->
+          
+            <!-- #END# Tasks -->
+            <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section> 
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar"> 
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="admin-image"> <img src="Images/home.png"  alt=""> </div>
+            <div class="admin-action-info"> 
+               <%-- <h3>Welcome</h3>--%>
+                
+            </div>
+           
+        </div>
+        <!-- #User Info --> 
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active open"><a href="Default.aspx"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>                                               
+
+             <%--  <li><a href="LocateParking.aspx"><i class="zmdi zmdi-account-o"></i><span>Locate</span></a></li>--%>
+                <li><a href="CheckSlots.aspx"><i class="zmdi zmdi-account-o"></i><span>Check Parking</span></a></li>
+                <li><a href="BookParking.aspx"><i class="zmdi zmdi-account-o"></i><span>Book Parking</span></a></li>
+                <li><a href="AdminLogin.aspx"><i class="zmdi zmdi-account-o"></i><span>Admin Login</span></a></li>
+              <%--  <li><a href="UserRegistration.aspx"><i class="zmdi zmdi-account-o"></i><span>User Login</span></a></li>--%>
+                
+            </ul>
+        </div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar --> 
+    <!-- Right Sidebar -->
+   
+    <!-- #END# Right Sidebar --> 
+</section>
+
+<section style="background:url("images/home.png")" class="content home">
+    <div class="container-fluid">
+        <div class="block-header">
+            <%--<h3>Eassy Park</h3>
+            --%>
+        </div>
+        
+       <%-- <div class="row clearfix">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                   <div class="icon"> <i class="zmdi"><asp:Image ID="Image1" Width="50px" ImageUrl="~/Images/locate.png" runat="server" /></i> </div>
+                    <div class="content">
+                        <h3><a href="LocateParking.aspx">Locate</a></h3>
+                    </div>
+                </div>
+            </div>--%>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi"><asp:Image ID="Image2" Width="50px" ImageUrl="~/Images/CheckSlot.png" runat="server" /></i> </div>
+                    <div class="content">
+                         <h3><a href="CheckSlots.aspx">Check Slot</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                   <%-- <div class="icon"> <i class="zmdi zmdi-bug col-blush"></i> </div>--%>
+                    <div class="icon"> <i class="zmdi"><asp:Image ID="Image3" Width="45px" ImageUrl="~/Images/parking.png" runat="server" /></i> </div>
+                    <div class="content">
+                        <h3><a href="BookParking.aspx">Book Parking</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi"><asp:Image ID="Image4" Width="50px" ImageUrl="~/Images/admin.ico" runat="server" /></i> </div>
+                    <div class="content">
+                         <h3><a href="AdminLogin.aspx">Admin</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        
+                        
+                           
+                           
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/slide1.png" alt="3" title="3" id="wows1_0"/></li>
+		<li><img src="data1/images/slide 2.jpg" alt="1" title="1" id="wows1_1"/></li> 
+		<li><img src="data1/images/slider 4.jpg" alt="bootstrap carousel" title="4" id="wows1_2"/></a></li>
+		
+	</div>
+
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <canvas id="line_chart" height="70"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+	</div>
+</section>
+
+<div class="color-bg"></div>
+
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
+<script src="assets/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js --> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="assets/js/pages/charts/sparkline.min.js"></script> 
+<script src="assets/js/pages/charts/chartjs.min.js"></script>
+
+<script src="assets/js/pages/index.js"></script>
+</body>
+
+<!-- Mirrored from thememakker.com/swift/hospital/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Feb 2017 17:10:13 GMT -->
+</html>

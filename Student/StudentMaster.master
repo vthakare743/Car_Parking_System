@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StudentMaster.master.cs" Inherits="Student_StudentMaster" %>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>Student</title>
+<link rel="icon" href="../favicon.ico" type="image/x-icon"><!-- Favicon-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet" />
+<!-- Custom Css -->
+<link href="../assets/css/main.css" rel="stylesheet">
+
+<link href="../assets/css/themes/all-themes.css" rel="stylesheet" />
+
+
+    
+	<link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+
+</head>
+
+<body class="theme-cyan">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-cyan">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader --> 
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars --> 
+
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <div class="form-group m-0">
+           
+            <button class="morphsearch-submit" type="submit">Search</button>
+        </div>
+    </form>
+   
+    <!-- /morphsearch-content --> 
+    <span class="morphsearch-close"></span> </div>
+<!-- Top Bar -->
+<nav class="navbar clearHeader">
+    <div class="container-fluid">
+        <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="#">
+            <asp:Label ID="Label1" runat="server" Text="------"></asp:Label>                                               </a> </div>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Notifications -->
+           
+            <!-- #END# Notifications --> 
+            <!-- Tasks -->
+          
+            <!-- #END# Tasks -->
+
+
+            <li>
+                
+            <a href="../Default.aspx" class="js-right-sidebar" data-close="true">LogOut  <i class="zmdi zmdi-settings"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section> 
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar"> 
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="admin-image"> <img src="../Images/studimage.png" alt=""> </div>
+            <div class="admin-action-info"> 
+                <h4>Welcome</h4>
+                
+            </div>
+           <div class="quick-stats">
+                <!--<h4>Ms. Yogita Kharche</h4> -->
+                
+            </div>
+        </div>
+        <!-- #User Info --> 
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active open"><a href="StudentDefault.aspx"><i class="zmdi zmdi-home"></i><span>Student Dashboard</span></a></li>                                               
+                
+                
+                <li><a href="PersonalInfo.aspx"><i class="zmdi zmdi-account-o"></i><span>Personal Info</span></a></li>
+                <li><a href="ViewFees.aspx"><i class="zmdi zmdi-account-o"></i><span>Fees Payment</span></a></li>
+                <li><a href="PaymentHistory.aspx"><i class="zmdi zmdi-account-o"></i><span>Payment History</span></a></li>
+                 <li><a href="ExamPayment.aspx"><i class="zmdi zmdi-account-o"></i><span>Exam History</span></a></li>
+                   
+            </ul>
+        </div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar --> 
+    <!-- Right Sidebar -->
+   
+    <!-- #END# Right Sidebar --> 
+</section>
+
+<section class="content home">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h3>
+                Welcome To Stuent Section    
+               </h3>
+            
+        </div>
+        
+        <div class="row clearfix">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi zmdi-account col-blue"></i> </div>
+                    <div class="content">
+                        <h3><a href="PersonalInfo.aspx">Personal Info</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi zmdi-account col-green"></i> </div>
+                    <div class="content">
+                         <h3><a href="ViewFees.aspx">Fees Payment</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi zmdi-bug col-blush"></i> </div>
+                    <div class="content">
+                        <h3><a href="PaymentHistory.aspx">History</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box-4 hover-zoom-effect">
+                    <div class="icon"> <i class="zmdi zmdi-bug col-blush"></i> </div>
+                    <div class="content">
+                        <h3><a href="ExamPayment.aspx">Exam Fees</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        
+                        
+                           
+                            <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="../data1/images/slide1.jpg" alt="3" title="3" id="wows1_0"/></li>
+		<li><img src="../data1/images/slide2.jpg" alt="1" title="1" id="wows1_1"/></li>
+		<li><img src="../data1/images/slider4.jpg" alt="bootstrap carousel" title="4" id="wows1_2"/></a></li>
+		
+	</div>
+
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="../engine1/wowslider.js"></script>
+	<script type="text/javascript" src="../engine1/script.js"></script>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <canvas id="line_chart" height="70"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+	</div>
+</section>
+
+<div class="color-bg"></div>
+
+<!-- Jquery Core Js --> 
+<script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
+<script src="../assets/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js --> 
+
+<script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="../assets/js/pages/charts/sparkline.min.js"></script> 
+<script src="../assets/js/pages/charts/chartjs.min.js"></script>
+
+<script src="../assets/js/pages/index.js"></script>
+</body>
+
+<!-- Mirrored from thememakker.com/swift/hospital/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Feb 2017 17:10:13 GMT -->
+</html>
